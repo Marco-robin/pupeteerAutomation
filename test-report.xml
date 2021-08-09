@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="D:\puppeteer\tests\subscribers.test.js" errors="0" package="D:\puppeteer\tests\subscribers.test.js" hostname="localhost" tests="1" failures="1" time="33.31" timestamp="2021-01-06T15:14:43">
+    <properties>
+    </properties>
+    <testcase classname="Login Test" name="Select Subscriber" time="0">
+      <failure message="Timeout - Async callback was not invoked within the 30000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000 ms timeout specified by jest.setTimeout.
+    at mapper (D:\puppeteer\node_modules\jest-jasmine2\build\queueRunner.js:27:45)
+    at D:\puppeteer\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)" type="AssertionError">
+      </failure>
+      <failure message="Error: No node found for selector: #navbarsDefault &gt; ul &gt; li:nth-child(9) &gt; a
+    at Object.&lt;anonymous&gt;.exports.assert (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\assert.js:26:15)
+    at DOMWorld.type (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\DOMWorld.js:306:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.&lt;anonymous&gt; (D:\puppeteer\tests\subscribers.test.js:44:9)" type="AssertionError">
+      </failure>
+      <failure message="Error: Navigation failed because browser has disconnected!
+    at D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\LifecycleWatcher.js:51:147
+    at D:\puppeteer\node_modules\puppeteer\lib\cjs\vendor\mitt\src\index.js:51:62
+    at Array.map (&lt;anonymous&gt;)
+    at Object.emit (D:\puppeteer\node_modules\puppeteer\lib\cjs\vendor\mitt\src\index.js:51:43)
+    at CDPSession.emit (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\EventEmitter.js:72:22)
+    at CDPSession._onClosed (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\Connection.js:247:14)
+    at Connection._onMessage (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\Connection.js:94:25)
+    at WebSocket.&lt;anonymous&gt; (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\node\NodeWebSocketTransport.js:13:32)
+    at WebSocket.onMessage (D:\puppeteer\node_modules\ws\lib\event-target.js:132:16)
+    at WebSocket.emit (events.js:315:20)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="1" name="D:\puppeteer\tests\login.test.js" errors="0" package="D:\puppeteer\tests\login.test.js" hostname="localhost" tests="4" failures="1" time="103.409" timestamp="2021-01-06T15:14:43">
+    <properties>
+    </properties>
+    <testcase classname="Login Test" name="Login == Without data" time="0">
+      <failure message="Timeout - Async callback was not invoked within the 30000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 30000 ms timeout specified by jest.setTimeout.
+    at mapper (D:\puppeteer\node_modules\jest-jasmine2\build\queueRunner.js:27:45)
+    at D:\puppeteer\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)" type="AssertionError">
+      </failure>
+      <failure message="TimeoutError: Navigation timeout of 30000 ms exceeded
+    at D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\LifecycleWatcher.js:106:111" type="AssertionError">
+      </failure>
+      <failure message="TimeoutError: waiting for selector `#admin_email` failed: timeout 30000ms exceeded
+    at new WaitTask (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\DOMWorld.js:505:34)
+    at DOMWorld.waitForSelectorInPage (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\DOMWorld.js:416:26)
+    at Object.internalHandler.waitFor (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\QueryHandler.js:31:77)
+    at DOMWorld.waitForSelector (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\DOMWorld.js:312:29)
+    at Frame.waitForSelector (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\FrameManager.js:842:51)
+    at Page.waitForSelector (D:\puppeteer\node_modules\puppeteer\lib\cjs\puppeteer\common\Page.js:1285:33)
+    at Object.&lt;anonymous&gt; (D:\puppeteer\tests\login.test.js:28:24)
+    at Object.asyncJestTest (D:\puppeteer\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at D:\puppeteer\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Login Test" name="Login == Wrong Email and valid Password" time="0">
+    </testcase>
+    <testcase classname="Login Test" name="Login == Valid Email and invalid Password" time="0">
+    </testcase>
+    <testcase classname="Login Test" name="Login == Correct Login" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
